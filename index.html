@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Sathsarani Saubhagya – Full Stack Developer & Software Engineer crafting modern digital solutions." />
+  <title>Sathsarani Saubhagya | Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">CC<span>.</span></a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About me</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact me</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <a href="#contact" class="btn-hire">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hi I am</p>
+        <h1 class="hero-name">Sathsarani Saubhagya</h1>
+        <h2 class="hero-title">
+          <span id="typed-text"></span><span class="cursor">|</span>
+        </h2>
+        <div class="hero-socials">
+          <a href="https://github.com/sSaubhagya12" target="_blank" class="social-icon" aria-label="GitHub"><i
+              class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/sathsarani-saubhagya-792911340/" target="_blank" class="social-icon"
+            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/sarani_saubhagya_?igsh=MWJ4cWNpaHR4anRyYg%3D%3D&utm_source=qr"
+            target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1DVvYD55jd/?mibextid=wwXIfr" target="_blank" class="social-icon"
+            aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="sathsaranisaubhagya2025@gmail.com" class="social-icon" aria-label="Email"><i
+              class="fas fa-envelope"></i></a>
+        </div>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn-primary">Hire Me</a>
+          <a href="assets/Sathsarani saubhagya CV.pdf" download="Sathsarani saubhagya CV.pdf" class="btn-secondary"><i
+              class="fas fa-download"></i> Download CV</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-number">05</span><span class="stat-label">Projects Done</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-number">2+</span><span class="stat-label">Years Learning</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-number">8+</span><span class="stat-label">Technologies</span></div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-img-ring"></div>
+        <div class="hero-img-circle">
+          <img src="assets/image_1.png" alt="Sathsarani Saubhagya" />
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="hero-scroll" aria-label="Scroll down"><i class="fas fa-chevron-down"></i></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Analytical Thinking · Problem Solving · Self-Learning </p>
+      </div>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="assets/image_2.png" alt="Sathsarani Saubhagya" />
+        </div>
+        <div class="about-text">
+          <p>Passionate developer crafting modern digital solutions through clean code, creative design, and innovative
+            problem-solving. Always building, always learning.</p>
+          <p style="margin-top:1rem;">I'm a software engineering student with hands-on experience across multiple tech
+            stacks — from Java desktop applications to full-stack web apps, AI-powered mobile apps, and automation bots.
+            I love turning complex ideas into clean, functional products.</p>
+          <a href="assets/Sathsarani saubhagya CV.pdf" download="Sathsarani saubhagya CV.pdf" class="btn-primary"
+            style="margin-top:2rem;display:inline-flex;align-items:center;gap:.5rem;">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="skills-section">
+        <div class="skills-wrapper"
+          style="position: relative; display: flex; align-items: center; gap: 1rem; width: 100%; max-width: 920px; margin: 0 auto;">
+          <button class="scroll-btn left-arrow"
+            onclick="document.querySelector('.skills-grid').scrollBy({left: -200, behavior: 'smooth'})"
+            aria-label="Scroll left">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <div class="skills-grid">
+            <div class="skill-item" data-percent="85">
+              <div class="skill-circle">
+                <svg viewBox="0 0 100 100">
+                  <circle class="skill-bg" cx="50" cy="50" r="42" />
+                  <circle class="skill-progress" cx="50" cy="50" r="42" />
+                </svg>
+                <div class="skill-icon-inner"><i class="fab fa-react"></i></div>
+              </div>
+              <span class="skill-percent">85%</span>
+              <span class="skill-name">React.js</span>
+            </div>
+
+            <div class="skill-item" data-percent="82">
+              <div class="skill-circle">
+                <svg viewBox="0 0 100 100">
+                  <circle class="skill-bg" cx="50" cy="50" r="42" />
+                  <circle class="skill-progress" cx="50" cy="50" r="42" />
+                </svg>
+                <div class="skill-icon-inner"><i class="fab fa-python"></i></div>
+              </div>
+              <span class="skill-percent">82%</span>
+              <span class="skill-name">Python</span>
+            </div>
+
+            <div class="skill-item" data-percent="72">
+              <div class="skill-circle">
+                <svg viewBox="0 0 100 100">
+                  <circle class="skill-bg" cx="50" cy="50" r="42" />
+                  <circle class="skill-progress" cx="50" cy="50" r="42" />
+                </svg>
+                <div class="skill-icon-inner"><i class="fas fa-mobile-alt"></i></div>
+              </div>
+              <span class="skill-percent">72%</span>
+              <span class="skill-name">Flutter / Dart</span>
+            </div>
+
+            <div class="skill-item" data-percent="75">
+              <div class="skill-circle">
+                <svg viewBox="0 0 100 100">
+                  <circle class="skill-bg" cx="50" cy="50" r="42" />
+                  <circle class="skill-progress" cx="50" cy="50" r="42" />
+                </svg>
+                <div class="skill-icon-inner"><i class="fab fa-node-js"></i></div>
+              </div>
+              <span class="skill-percent">75%</span>
+              <span class="skill-name">Node.js</span>
+            </div>
+
+            <div class="skill-item" data-percent="70">
+              <div class="skill-circle">
+                <svg viewBox="0 0 100 100">
+                  <circle class="skill-bg" cx="50" cy="50" r="42" />
+                  <circle class="skill-progress" cx="50" cy="50" r="42" />
+                </svg>
+                <div class="skill-icon-inner"><i class="fas fa-database"></i></div>
+              </div>
+              <span class="skill-percent">70%</span>
+              <span class="skill-name">MongoDB</span>
+            </div>
+
+            <div class="skill-item" data-percent="70">
+              <div class="skill-circle">
+                <svg viewBox="0 0 100 100">
+                  <circle class="skill-bg" cx="50" cy="50" r="42" />
+                  <circle class="skill-progress" cx="50" cy="50" r="42" />
+                </svg>
+                <div class="skill-icon-inner"><i class="fas fa-fire"></i></div>
+              </div>
+              <span class="skill-percent">70%</span>
+              <span class="skill-name">Firebase</span>
+            </div>
+
+            <div class="skill-item" data-percent="90">
+              <div class="skill-circle">
+                <svg viewBox="0 0 100 100">
+                  <circle class="skill-bg" cx="50" cy="50" r="42" />
+                  <circle class="skill-progress" cx="50" cy="50" r="42" />
+                </svg>
+                <div class="skill-icon-inner"><i class="fab fa-js"></i></div>
+              </div>
+              <span class="skill-percent">90%</span>
+              <span class="skill-name">JavaScript</span>
+            </div>
+
+            <div class="skill-item" data-percent="88">
+              <div class="skill-circle">
+                <svg viewBox="0 0 100 100">
+                  <circle class="skill-bg" cx="50" cy="50" r="42" />
+                  <circle class="skill-progress" cx="50" cy="50" r="42" />
+                </svg>
+                <div class="skill-icon-inner"><i class="fab fa-html5"></i></div>
+              </div>
+              <span class="skill-percent">88%</span>
+              <span class="skill-name">HTML / CSS</span>
+            </div>
+
+            <div class="skill-item" data-percent="80">
+              <div class="skill-circle">
+                <svg viewBox="0 0 100 100">
+                  <circle class="skill-bg" cx="50" cy="50" r="42" />
+                  <circle class="skill-progress" cx="50" cy="50" r="42" />
+                </svg>
+                <div class="skill-icon-inner"><i class="fab fa-java"></i></div>
+              </div>
+              <span class="skill-percent">80%</span>
+              <span class="skill-name">Java</span>
+            </div>
+
+            <div class="skill-item" data-percent="65">
+              <div class="skill-circle">
+                <svg viewBox="0 0 100 100">
+                  <circle class="skill-bg" cx="50" cy="50" r="42" />
+                  <circle class="skill-progress" cx="50" cy="50" r="42" />
+                </svg>
+                <div class="skill-icon-inner"><i class="fab fa-microsoft"></i></div>
+              </div>
+              <span class="skill-percent">65%</span>
+              <span class="skill-name">C#</span>
+            </div>
+          </div>
+
+          <button class="scroll-btn right-arrow"
+            onclick="document.querySelector('.skills-grid').scrollBy({left: 200, behavior: 'smooth'})"
+            aria-label="Scroll right">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section class="certificates" id="certificates">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Certificates</h2>
+        <p class="section-subtitle">My achievements and professional certifications</p>
+      </div>
+      <div class="scroll-container"
+        style="position: relative; width: 100%; max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 1rem;">
+        <button class="scroll-btn left-arrow"
+          onclick="document.querySelector('.cert-grid').scrollBy({left: -350, behavior: 'smooth'})"
+          aria-label="Scroll left">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="cert-grid">
+          <div class="cert-card">
+            <div class="cert-icon-wrap"><i class="fas fa-network-wired"></i></div>
+            <h3 class="cert-title">Introduction to Figma</h3>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Simplilearn</p>
+            <p class="cert-date"><i class="fas fa-calendar-alt"></i> 15 June 2025</p>
+            <a href="https://www.linkedin.com/in/sathsarani-saubhagya-792911340/overlay/Certifications/5888552/treasury/?profileId=ACoAAFWQiB4BlMRY0zROhwy3kj-G1KaFQ0SMifk"
+              class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+            <!-- Hover Slider Placeholder -->
+            <div class="card-slider">
+              <div class="slider-track">
+                <!-- Add your images here -->
+                <img src="assets/c1.png" alt="Figma Certificate" />
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-wrap"><i class="fas fa-mobile-alt"></i></div>
+            <h3 class="cert-title">Introduction to JavaScript</h3>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Great Learning</p>
+            <p class="cert-date"><i class="fas fa-calendar-alt"></i> on december 2024</p>
+            <a href="https://www.linkedin.com/in/sathsarani-saubhagya-792911340/overlay/Certifications/87914615/treasury/?profileId=ACoAAFWQiB4BlMRY0zROhwy3kj-G1KaFQ0SMifk"
+              class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+            <!-- Hover Slider Placeholder -->
+            <div class="card-slider">
+              <div class="slider-track">
+                <!-- Add your images here -->
+                <img src="assets/c2.png" alt="JavaScript Certificate" />
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-wrap"><i class="fab fa-android"></i></div>
+            <h3 class="cert-title">C for Beginners</h3>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Great Learning</p>
+            <p class="cert-date"><i class="fas fa-calendar-alt"></i> on december 2024</p>
+            <a href="https://www.linkedin.com/in/sathsarani-saubhagya-792911340/overlay/Certifications/88363635/treasury/?profileId=ACoAAFWQiB4BlMRY0zROhwy3kj-G1KaFQ0SMifk"
+              class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+            <!-- Hover Slider Placeholder -->
+            <div class="card-slider">
+              <div class="slider-track">
+                <!-- Add your images here -->
+                <img src="assets/c3.png" alt="C for Beginners Certificate" />
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-wrap"><i class="fas fa-laptop-code"></i></div>
+            <h3 class="cert-title">User Interface Design With Figma</h3>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Alison</p>
+            <p class="cert-date"><i class="fas fa-calendar-alt"></i> 26 June 2025</p>
+            <a href="https://www.linkedin.com/in/sathsarani-saubhagya-792911340/overlay/Certifications/744630537/treasury/?profileId=ACoAAFWQiB4BlMRY0zROhwy3kj-G1KaFQ0SMifk"
+              class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+            <!-- Hover Slider Placeholder -->
+            <div class="card-slider">
+              <div class="slider-track">
+                <!-- Add your images here -->
+                <img src="assets/c4.png" alt="User Interface Design With Figma" />
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <button class="scroll-btn right-arrow"
+          onclick="document.querySelector('.cert-grid').scrollBy({left: 350, behavior: 'smooth'})"
+          aria-label="Scroll right">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">A showcase of my work and open-source contributions</p>
+      </div>
+      <div class="scroll-container"
+        style="position: relative; width: 100%; max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 1rem;">
+        <button class="scroll-btn left-arrow"
+          onclick="document.querySelector('.projects-grid').scrollBy({left: -350, behavior: 'smooth'})"
+          aria-label="Scroll left">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="projects-grid">
+
+          <div class="project-card">
+            <div class="project-icon-wrap"><i class="fas fa-graduation-cap"></i></div>
+            <h3 class="project-title">AI Study Planner</h3>
+            <p class="project-desc">Planora — an AI-powered study planner mobile app built with Flutter/Dart to help
+              students plan and track their learning sessions.</p>
+            <div class="project-tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span
+                class="tag">AI</span></div>
+            <a href="https://github.com/cChandeera/AI-Study-Planner" target="_blank" class="project-link">View on GitHub
+              <i class="fab fa-github"></i></a>
+            <!-- Hover Slider Placeholder -->
+            <div class="card-slider">
+              <div class="slider-track">
+                <!-- Add your images here -->
+                <img src="assets/projrct1.1.jpg" alt="Screenshot 1" />
+                <img src="assets/projrct1.2.jpg" alt="Screenshot 2" />
+                <img src="assets/projrct1.3.jpg" alt="Screenshot 2" />
+                <img src="assets/projrct1.4.jpg" alt="Screenshot 2" />
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon-wrap"><i class="fas fa-layer-group"></i></div>
+            <h3 class="project-title">Togertherwise MERN</h3>
+            <p class="project-desc">A full-stack MERN web application demonstrating modern full-stack development with
+              MongoDB, Express, React, and Node.js.</p>
+            <div class="project-tags"><span class="tag">MongoDB</span><span class="tag">React</span><span
+                class="tag">Node.js</span></div>
+            <a href="https://github.com/cChandeera/Togertherwise-MERN--main" target="_blank" class="project-link">View
+              on
+              GitHub <i class="fab fa-github"></i></a>
+            <!-- Hover Slider Placeholder -->
+            <div class="card-slider">
+              <div class="slider-track">
+                <!-- Add your images here -->
+                <img src="assets/project2.1.png" alt="Screenshot 1" />
+                <img src="assets/project2.2.png" alt="Screenshot 2" />
+                <img src="assets/project2.3.png" alt="Screenshot 2" />
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon-wrap"><i class="fas fa-wallet"></i></div>
+            <h3 class="project-title">Expense Manager</h3>
+            <p class="project-desc">Java-based expense manager with MySQL backend supporting CRUD operations for
+              efficient
+              daily expense tracking.</p>
+            <div class="project-tags"><span class="tag">Java</span><span class="tag">MySQL</span><span
+                class="tag">JDBC</span></div>
+            <a href="https://github.com/cChandeera/Expense-Manager-Java-MySQL-" target="_blank"
+              class="project-link">View
+              on GitHub <i class="fab fa-github"></i></a>
+            <!-- Hover Slider Placeholder -->
+            <div class="card-slider">
+              <div class="slider-track">
+                <!-- Add your images here -->
+                <img src="assets/project3.1.png" alt="Screenshot 1" />
+                <img src="assets/project3.2.png" alt="Screenshot 1" />
+                <img src="assets/project3.3.png" alt="Screenshot 1" />
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon-wrap"><i class="fab fa-whatsapp"></i></div>
+            <h3 class="project-title">WhatsApp Bot</h3>
+            <p class="project-desc">Feature-rich WhatsApp automation bot with group management, university resource hub,
+              YouTube downloader and moderation tools.(Co-Developer)</p>
+            <div class="project-tags"><span class="tag">JavaScript</span><span class="tag">Node.js</span><span
+                class="tag">HTML</span></div>
+            <a href="https://github.com/cChandeera/my-whatsapp-bot" target="_blank" class="project-link">View on GitHub
+              <i class="fab fa-github"></i></a>
+            <!-- Hover Slider Placeholder -->
+            <div class="card-slider">
+              <div class="slider-track">
+                <!-- Add your images here -->
+                <img src="assets/projrct4.jpg" alt="Screenshot 1" />
+
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon-wrap"><i class="fas fa-gamepad"></i></div>
+            <h3 class="project-title">2D Mini Game</h3>
+            <p class="project-desc">A browser-based endless runner 2D game built with HTML, CSS, and JavaScript
+              featuring
+              smooth animations and jump mechanics.</p>
+            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span
+                class="tag">JavaScript</span></div>
+            <a href="https://github.com/cChandeera/2D-Mini-Game-HTML-CSS-javaScript-" target="_blank"
+              class="project-link">View on GitHub <i class="fab fa-github"></i></a>
+            <!-- Hover Slider Placeholder -->
+            <div class="card-slider">
+              <div class="slider-track">
+                <!-- Add your images here -->
+                <img src="assets/project8.1.png" alt="Screenshot 1" />
+                <img src="assets/project8.2.png" alt="Screenshot 1" />
+                <img src="assets/project8.3.png" alt="Screenshot 1" />
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon-wrap"><i class="fas fa-hotel"></i></div>
+            <h3 class="project-title">Hotel Reservation (Java)</h3>
+            <p class="project-desc">Desktop app built with Java & NetBeans for hotel bookings — room reservations,
+              customer management, and payment handling.</p>
+            <div class="project-tags"><span class="tag">Java</span><span class="tag">NetBeans</span><span
+                class="tag">MySQL</span></div>
+            <a href="https://github.com/cChandeera/Hotel-Reservation-System-Java-NetBeans-" target="_blank"
+              class="project-link">View on GitHub <i class="fab fa-github"></i></a>
+            <!-- Hover Slider Placeholder -->
+            <div class="card-slider">
+              <div class="slider-track">
+                <!-- Add your images here -->
+                <img src="assets/project5.1.png" alt="Screenshot 1" />
+                <img src="assets/project5.2.png" alt="Screenshot 2" />
+                <img src="assets/project5.3.png" alt="Screenshot 2" />
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon-wrap"><i class="fas fa-university"></i></div>
+            <h3 class="project-title">Simple Banking Program</h3>
+            <p class="project-desc">Java console-based banking system demonstrating OOP concepts: deposits, withdrawals,
+              and real-time balance management.</p>
+            <div class="project-tags"><span class="tag">Java</span><span class="tag">OOP</span></div>
+            <a href="https://github.com/cChandeera/Simple-Banking-Program-with-java" target="_blank"
+              class="project-link">View on GitHub <i class="fab fa-github"></i></a>
+            <!-- Hover Slider Placeholder -->
+            <div class="card-slider">
+              <div class="slider-track">
+                <!-- Add your images here -->
+                <img src="assets/project6.png" alt="Screenshot 1" />
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon-wrap"><i class="fas fa-concierge-bell"></i></div>
+            <h3 class="project-title">Hotel Reservation (C#)</h3>
+            <p class="project-desc">A C# web app for hotel reservations — view room details, make bookings, and manage
+              reservations through a user-friendly interface.</p>
+            <div class="project-tags"><span class="tag">C#</span><span class="tag">ASP.NET</span><span
+                class="tag">Web</span></div>
+            <a href="https://github.com/cChandeera/Simple-Hotel-Reservation-System" target="_blank"
+              class="project-link">View on GitHub <i class="fab fa-github"></i></a>
+            <!-- Hover Slider Placeholder -->
+            <div class="card-slider">
+              <div class="slider-track">
+                <!-- Add your images here -->
+                <img src="assets/project7.1.png" alt="Screenshot 1" />
+                <img src="assets/project7.2.png" alt="Screenshot 1" />
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="scroll-btn right-arrow"
+          onclick="document.querySelector('.projects-grid').scrollBy({left: 350, behavior: 'smooth'})"
+          aria-label="Scroll right">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contact me</h2>
+        <p class="section-subtitle">Cultivating Connections: Reach Out And Connect With Me</p>
+      </div>
+      <form class="contact-form" id="contact-form" action="https://formspree.io/f/xpqvdpyw" method="POST">
+        <div class="form-row">
+          <input type="text" id="f-name" name="name" placeholder="Name" class="form-input" required />
+          <input type="email" id="f-email" name="email" placeholder="Email" class="form-input" required />
+        </div>
+        <div class="form-row">
+          <input type="tel" id="f-phone" name="phone" placeholder="Phone Number" class="form-input" />
+          <select id="f-service" name="service" class="form-input">
+            <option value="" disabled selected>Service Of Interest</option>
+            <option>Web Development</option>
+            <option>Mobile App Development</option>
+            <option>Desktop Application</option>
+            <option>Full Stack Development</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <select id="f-country" name="country" class="form-input">
+            <option value="" disabled selected>Country</option>
+            <option>Sri Lanka</option>
+            <option>United States</option>
+            <option>United Kingdom</option>
+            <option>Australia</option>
+            <option>Canada</option>
+            <option>Other</option>
+          </select>
+          <textarea id="f-message" name="message" placeholder="Description..."
+            class="form-input form-textarea"></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn-send" id="btn-send">Send</button>
+        </div>
+        <p id="form-status" style="margin-top: 1rem; font-size: 0.95rem; text-align: center; font-weight: 500;"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">CC<span>.</span></div>
+      <nav class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About me</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact me</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://github.com/sSaubhagya12" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sathsarani-saubhagya-792911340/" target="_blank" aria-label="LinkedIn"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/sarani_saubhagya_?igsh=MWJ4cWNpaHR4anRyYg%3D%3D&utm_source=qr"
+          target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/1DVvYD55jd/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"><i
+            class="fab fa-facebook"></i></a>
+        <a href="mailto:sathsaranisaubhagya2025@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Sathsarani Saubhagya. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor-dot"></div>
+  <div class="custom-cursor-outline"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
